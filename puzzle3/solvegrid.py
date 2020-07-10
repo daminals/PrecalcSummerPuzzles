@@ -13,12 +13,12 @@ def solved_efficient(n):
     return int(num/(n+1))
 
 
-
-def pascal(n,k):
+def pascal(n,k): # Solves the center of the pascal triangle, which we need
     top = math.factorial(n)
     k_fac = math.factorial(k)
     bottom = (k_fac)*math.factorial(n-k)
     return (top/bottom)
+
 
 def solve(n): # slow
     directions = [0, 1] * n
@@ -28,17 +28,9 @@ def solve(n): # slow
     #sol = [x for x in sol if not x[0] == 1] # filters out solutions starting with 1
     return sol
 
-def explicit_func(x):  # Where x is the subscript of n
-    n = 0
-    for i in range(x, 1, -1):
-        i -= 1
-        n += (i * (i + 1)) / 2
-    #print(n)
-    return n
-
 
 if __name__ == '__main__':
     n = 3
     print(solved_efficient(n))
-    print(solved_(n))
+    #print(solved_(n))
 
