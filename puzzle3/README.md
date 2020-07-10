@@ -8,7 +8,7 @@ Well, to figure out an equation, it might help to try and establish a sequence, 
 
 Utilizing python's itertools permutations feature, we can find all possible combinations
 
-I admit I got stuck at this point. I didn't understand how to filter out the solutions that crossed the diagnol. I conferred with my peers to try and get an idea, and, my friend managed to recognize a pattern: Solutions = (totalSolutions / (n+1))
+I admit I got stuck at this point. I didn't understand how to filter out the solutions that crossed the diagnol. I conferred with my peers to try and get an idea, and, my friend, Tin Škorić, managed to recognize a pattern: Solutions = (totalSolutions / (n+1))
 
 And amazingly, it works! Unfortunately it didn't help filter out which solutions those crossed out were, so it isn't helpful for drawing the solutions.
 
